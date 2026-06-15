@@ -6,13 +6,16 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #f0f2f5;
+  /* background: #f0f2f5; */
   padding: 30px;
+  background: #0d1117;
+  color: #e6edf3;
 }
 
 h1{
     /* color: #b92b27; */
-    color: #1a1a1a;
+    /* color: #1a1a1a; */
+    color: #e6edf3;
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 24px;
@@ -20,12 +23,18 @@ h1{
     /* margin-left: 30px; */
 }
 
+h1 span{
+  color: #58a6ff;
+}
+
 .post {
-  background: white;
+  /* background: white; */
+  background: #161b22;
+  border: 1px solid #30363d;
   border-radius: 12px;
   padding: 16px 20px;
   margin-bottom: 16px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  /* box-shadow: 0 2px 8px rgba(0,0,0,0.1); */
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -45,13 +54,15 @@ h1{
 
 .user{
     font-weight: bold;
-    color: #b92b27;
+    /* color: #b92b27; */
+    color: #58a6ff;
     font-style: italic;
 }
 
 .content {
   font-size: 1rem;
-  color: #333;
+  /* color: #333; */
+  color: #c9d1d9;
 }
 
 .actions {
@@ -60,11 +71,12 @@ h1{
   align-items: center;
   margin-top: 8px;
   padding-top: 10px;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #30363d;
 }
 
 a {
-  color: #1877f2;
+  /* color: #1877f2; */
+  color: #58a6ff;
   text-decoration: none;
   font-size: 0.9rem;
 }
@@ -72,7 +84,8 @@ a {
 a:hover { text-decoration: underline; }
 
 button {
-  background: #e74c3c;
+  /* background: #e74c3c; */
+  background: #da3633;
   color: white;
   border: none;
   padding: 5px 12px;
@@ -81,19 +94,20 @@ button {
   font-size: 0.85rem;
 }
 
-button:hover { background: #c0392b; }
+button:hover { background: #b91c1c; }
 
 .create-link {
   display: inline-block;
   margin-top: 20px;
   margin-left: 40px;
-  background: #1877f2;
+  background: #238636;
   color: white;
   padding: 10px 20px;
   border-radius: 8px;
   text-decoration: none;
 }
 
+.create-link:hover { background-color: #2ea043;}
 
                     /* CSS of show.ejs */
 .page-wrapper {
@@ -112,15 +126,16 @@ button:hover { background: #c0392b; }
 .back-btn {
   display: inline-block;
   margin-bottom: 16px;
-  color: #555;
+  color: #58a6ff;
   text-decoration: none;
   font-size: 0.95rem;
 }
 
-.back-btn:hover { color: #b92b27; }
+.back-btn:hover { color: #e6edf3; }
 
 .detail-card {
-  background: white;
+  background: #161b22;
+  border: 1px solid #30363d;
   border-radius: 14px;
   padding: 24px 28px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.1);
@@ -130,7 +145,7 @@ button:hover { background: #c0392b; }
 }
 
 .badge {
-  background: #b92b27;
+  background: #1f6feb;
   color: white;
   padding: 4px 12px;
   border-radius: 20px;
@@ -140,7 +155,7 @@ button:hover { background: #c0392b; }
 
 .post-id {
   font-size: 0.78rem;
-  color: #999;
+  color: #8b949e;
   word-break: break-all;
 }
 
@@ -150,8 +165,8 @@ button:hover { background: #c0392b; }
 
 .detail-content {
   font-size: 1.1rem;
-  color: #333;
-  border-top: 1px solid #eee;
+  color: #c9d1d9;
+  border-top: 1px solid #30363d;
   padding: 10px 0;
 }
 
@@ -159,14 +174,21 @@ button:hover { background: #c0392b; }
   width: 100%;
   padding: 10px;
   border-radius: 8px;
-  border: 1px solid #ddd;
+  border: 1px solid #30363d;
+  background: #0d1117;
+  color: #e6edf3;
   font-size: 1rem;
   resize: vertical;
 }
 
+.edit-textarea:focus {
+  border-color: #58a6ff;
+  outline: none;
+}
+
 .save-btn {
   margin-top: 10px;
-  background: #27ae60;
+  background: #238636;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -175,7 +197,7 @@ button:hover { background: #c0392b; }
   cursor: pointer;
 }
 
-.save-btn:hover { background: #1e8449; }
+.save-btn:hover { background: #2ea043; }
 
                 
                 /* CSS of new.ejs */
@@ -189,24 +211,21 @@ button:hover { background: #c0392b; }
 
 .form-group label {
     font-weight: 600;
-    color: #444;
+    color: #8b949e;
     font-size: 0.95rem;
 }
 
 .form-input {
     padding: 10px 14px;
     border-radius: 8px;
-    border: 1px solid #ddd;
+    border: 1px solid #30363d;
+    background: #0d1117;
+    color: #e6edf3;
     font-size: 1rem;
     outline: none;
-    transition: border 0.2s;
+    /* transition: border 0.2s; */
 }
 
 .form-input:focus {
-    border-color: #b92b27;
-}
-
-.edit-textarea:focus {
-    border-color: #b92b27;
-    outline: none;
+    border-color: #58a6ff;
 }

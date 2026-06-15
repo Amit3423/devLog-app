@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Post</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+    <div class="page-wrapper">
+         <a href="/posts" class="back-btn">← Back to Posts</a>
+
+         <div class="detail-card">
+            <span class="badge">Editing Post</span>
+            <p class="post-id">Post ID🔑 <span><%= post.id %></span></p>
+
+            <div class="user-row">
+                <img src="https://ui-avatars.com/api/?name=<%= post.username %>&background=random&rounded=true&size=50" class="avatar"/>
+                <h3 class="user">@<%= post.username %></h3>
+            </div>
+
+            <form method="post" action="/posts/<%= post.id %>?_method=PATCH">
+                <textarea name="content" rows="6" cols="40" class="edit-textarea"><%= post.content %></textarea>
+                <br/>
+                <button class="save-btn ">💾 Save Changes</button>
+                </form>
+         </div>
+    </div>
+
+    <!--
+    <h2>Edit your post</h2>
+    <p>Post id : <%= post.id %></p>
+    <p>Post username : @<%= post.username %></p>
+    <form method="post" action="/posts/<%=post.id%>?_method=PATCH">
+        <textarea name="content" rows="10" cols="35">
+<%= post.content %>
+        </textarea>
+        <button>Submit</button>
+    </form> -->
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post in Detail</title>
+    <link rel="stylesheet" href="/style.css" />
+
+</head>
+<body>
+    <div class="page-wrapper">
+        <a href="/posts" class="back-btn">← Back to Posts</a>
+
+        <div class="detail-card">
+            <span class="badge">Post Detail </span>
+            <p class="post-id">Post ID 🔑 <span><%= post.id %></span></p>
+
+            <div class="user-row">
+                <img src="https://ui-avatars.com/api/?name=<%= post.username %>&background=random&rounded=true&size=50" class="avatar"/>
+                <h3 class="user">@<%= post.username %></h3>
+            </div>
+            <p class="detail-content"><%= post.content %></p>
+        </div>
+    </div>
+
+    <!-- <h2>Here is your post in detail</h2>
+    <p>Post id : <%= post.id %> </p>
+    <div class="post">
+        <div class="user-row">
+            <img src="https://ui-avatars.com/api/?name=<%= post.username %>&background=random&rounded=true&size=40" class="avatar" />
+                <h3 class="user">@<%= post.username %></h3>
+        </div>
+        <p class="content"><%= post.content %></p>
+    </div> -->
+</body>
+</html>
